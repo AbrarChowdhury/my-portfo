@@ -2,11 +2,10 @@
     background: url(./abrar.png) no-repeat fixed;
     background-size: cover;
     background-position: center;
-
     min-height: 100vh;
 }
 .half-container{
-    margin: 0 10vw;
+    margin: 0 5vw;
     width: 50vw;
 }
 .header{
@@ -14,19 +13,27 @@
     margin: 20px 0;
 }
 .subtitle{
-    font-size: 22px;
-    line-height: 50px;
+    font-size: 18px;
+    line-height: 30px;
     font-weight: 400;
-    color:rgba(255, 255, 255, 0.6);
+    color:rgba(255, 255, 255, 0.9);
+    margin:0;
+}
+.home-subtitle{
+    font-size: 25px;
+    line-height: 30px;
+    font-weight: 400;
+    color:rgba(255, 255, 255, 0.9);
     margin:0;
 }
 .c2action{
-    font-size: 22px;
+    font-size: 18px;
     font-weight: 400;
     color: orange;
 }
 .name{
     font-size: 32px;
+    font-weight: 400;
 }
 .hide{
     display: none;
