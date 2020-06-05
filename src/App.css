@@ -38,3 +38,12 @@
 .hide{
     display: none;
 }
+
+a{
+    text-decoration: none;
+    color: orange;
+    font-size: 18px;
+}
+.fa-envelope{
+    margin-left: 60px;
+}

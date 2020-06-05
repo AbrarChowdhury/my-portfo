@@ -1,0 +1,17 @@
+input,textarea{
+    max-width: 650px;
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    background: red;
+    color:white;
+    background: rgba(50, 50, 50, 0.5);
+    border-style: none;
+    margin-top:5px;
+    margin-bottom:10px;
+}
+input,textarea:focus{
+    outline: none !important;
+    border-color: #719ECE;
+    box-shadow: 0 0 3px rgba(255, 255, 255,0.3);
+}
