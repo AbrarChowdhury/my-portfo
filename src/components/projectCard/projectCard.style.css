@@ -1,0 +1,16 @@
+.project-container{
+    padding-left: 5vw;
+    min-height:200px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-content: center;
+    background: linear-gradient(177deg, rgb(26,32,42) 0%, rgb(0,0,0) 50%, rgb(0,0,0) 100%);
+}
+.project-text{
+    align-self: center;
+}
+.project-img{
+    justify-self: center;
+    height: 200px;
+    margin: 60px;
+}

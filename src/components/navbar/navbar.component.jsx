@@ -1,14 +1,15 @@
 import React from 'react';
 import './navbar.style.css';
+
 function Navbar() {
     return (
         <nav>
             <ul>
-                <li>Home</li>
-                <li>About</li>
-                <li>Services</li>
-                <li>Work</li>
-                <li>Contact</li>
+                <li><a className="routes" href="/">Home</a></li>
+                <li><a className="routes" href="/">About</a></li>
+                <li><a className="routes" href="/">Services</a></li>
+                <li><a className="routes" href="/">Work</a></li>
+                <li><a className="routes" href="/">Contact</a></li>
             </ul>
         </nav>
         

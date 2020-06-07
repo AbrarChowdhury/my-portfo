@@ -1,0 +1,18 @@
+.card{
+    display: grid;
+    grid-template-columns: 250px auto;
+    grid-gap: 30px;
+    align-items: center;
+    margin-bottom: 50px;
+}
+.icon{
+    height: 288.67px;
+    width: 250;
+}
+
+.service-title{
+    font-size: 32px;
+}
+.service-description{
+    font-size: 24px;
+}

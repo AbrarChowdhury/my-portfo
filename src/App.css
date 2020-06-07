@@ -1,12 +1,22 @@
+
 .App{
     background: url(./abrar.png) no-repeat fixed;
     background-size: cover;
     background-position: center;
     min-height: 100vh;
+    
+    padding-top: 50px;
 }
 .half-container{
     margin: 0 5vw;
     width: 50vw;
+}
+.height{
+    min-height: 70vh;
+}
+.align-center{
+    display: grid;
+    align-content: center;
 }
 .header{
     font-size: 55px;
