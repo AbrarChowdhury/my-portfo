@@ -6,16 +6,19 @@ import About from './about'
 import Services from './services'
 import Work from './work'
 import Contact from './contact'
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 function App() {
   return (
-    <div className="App">
-      <Navbar/>
-      <Home/>
-      <About/>
-      <Services/>
-      <Work/>
-      <Contact/>
-    </div>
+    <Router>  
+      <div className="App">
+        <Navbar />
+        <Route path="/" exact component={Home}/>
+        <Route path="/about" component={About}/>
+        <Route path="/services" component={Services}/>
+        <Route path="/work" component={Work}/>
+        <Route path="/contact" component={Contact}/>
+      </div>
+    </Router>
   );
 }
 

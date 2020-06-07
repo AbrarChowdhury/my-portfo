@@ -7,7 +7,7 @@ const Work = () => {
     return (
         <div>
         <section className="work">
-        <div className="half-container align-center height ">
+        <div className="half-container height ">
           <h1 className="header">View Some Of My Latest Work.</h1>
         </div>
 

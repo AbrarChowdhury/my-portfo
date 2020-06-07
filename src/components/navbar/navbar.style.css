@@ -4,24 +4,21 @@ nav{
   position: fixed;
   top: 0;
   left:0;
-}
-ul{
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
   font-weight: bold;
   font-size: 18px;
 }
-li{
+.main-nav{
   display: inline;
-  padding-left: 7.5vw;
-}
-.routes{
+  margin-left: 7.5vw;
+  text-decoration: none;
   color: white;
 }
-.routes:hover{
-  color: whitesmoke;
+.main-nav:hover{
+  color: rgba(255, 255, 255, 0.9);
 }
-.routes:active{
+.main-nav-active{
   color: orange;
+}
+.main-nav-active:hover{
+  color: rgba(255, 166, 0, 0.9);
 }

@@ -1,18 +1,17 @@
 
 .App{
-    background: url(./abrar.png) no-repeat fixed;
+    background: url(/images/abrar.png) no-repeat fixed;
     background-size: cover;
     background-position: center;
     min-height: 100vh;
-    
-    padding-top: 50px;
 }
 .half-container{
     margin: 0 5vw;
     width: 50vw;
+    padding-top: 15vh;
 }
 .height{
-    min-height: 70vh;
+    min-height: 48vh;
 }
 .align-center{
     display: grid;
@@ -40,6 +39,7 @@
     font-size: 18px;
     font-weight: 400;
     color: orange;
+    text-decoration: none;
 }
 .name{
     font-size: 32px;
@@ -49,11 +49,6 @@
     display: none;
 }
 
-a{
-    text-decoration: none;
-    color: orange;
-    font-size: 18px;
-}
 .fa-envelope{
     margin-left: 60px;
 }
