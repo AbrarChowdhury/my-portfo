@@ -28,13 +28,7 @@
     color:rgba(255, 255, 255, 0.9);
     margin:0;
 }
-.home-subtitle{
-    font-size: 25px;
-    line-height: 30px;
-    font-weight: 400;
-    color:rgba(255, 255, 255, 0.9);
-    margin:0;
-}
+
 .c2action{
     font-size: 18px;
     font-weight: 400;
@@ -45,10 +39,24 @@
     font-size: 32px;
     font-weight: 400;
 }
-.hide{
-    display: none;
-}
 
 .fa-envelope{
     margin-left: 60px;
 }
+
+@keyframes fade-in-up {
+    0% {
+      opacity:0;
+      transform: translate(0, 5px);
+    }
+    50%{
+      transform: translate(0, 0);
+  
+    }
+    100% {
+      opacity:100;
+    }
+  }
+  .half-container{
+    animation: fade-in-up .5s ease-in;
+  }

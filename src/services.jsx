@@ -8,7 +8,7 @@ const Services = () => {
                 <div className="half-container">
                     <h1 className='header'>Amazing Things I'll Make For You.</h1>
                 
-                    <h2 className='name'>From simple single page websites to E-commerse sites i've got you fully covered.</h2>
+                    <h2 className='subtitle'>From simple single page websites to E-commerse sites i've got you fully covered.</h2>
                     <ServiceCard 
                         image="url(/Untitled-1.png" 
                         title="Responsive"
