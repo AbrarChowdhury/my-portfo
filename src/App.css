@@ -39,11 +39,16 @@
     font-size: 32px;
     font-weight: 400;
 }
+.service-list{
+    margin-top: 15vh;
+}
 
 .fa-envelope{
     margin-left: 60px;
 }
-
+a{
+  text-decoration: none;
+}
 @keyframes fade-in-up {
     0% {
       opacity:0;

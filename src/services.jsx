@@ -1,6 +1,6 @@
 import React from 'react';
 import ServiceCard from './components/serviceCard/serviceCard.component';
-
+import { Link } from 'react-router-dom'
 const services = [
     {
         image:'/images/resIcon.png',
@@ -36,12 +36,14 @@ const Services = () => {
         <div>
             <section className="services">
                 <div className="half-container">
-                    <div className="height">
+                    <div>
                         <h1 className='header'>Amazing Things I'll Make For You.</h1>
                         <h2 className='name'>From simple single page websites to E-commerse sites i've got you fully covered.</h2>
-                    </div>
+                        <br/>
+                   
+                        </div>
                     
-                    <div className="services">
+                    <div className="service-list">
                     {services.map((service)=>(
                         <ServiceCard 
                             image={service.image} 
@@ -49,8 +51,12 @@ const Services = () => {
                             description={service.desc}
                         />
                     ))}
-                    </div>                   
-                   
+                    </div> 
+                    <br/><br/><br/><br/><br/>
+                    <p className='name'><strong>Want my service?</strong></p>
+                    <Link to="/contact"><span className="c2action">Let me know the details <i class="fa fa-chevron-right" aria-hidden="true"></i></span></Link>
+                    <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+
                 </div>
             </section>
         </div>

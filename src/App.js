@@ -6,12 +6,14 @@ import About from './about'
 import Services from './services'
 import Work from './work'
 import Contact from './contact'
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
+import { BrowserRouter as Router, Route } from 'react-router-dom'
+import ScrollToTop from './components/scrollToTop';
 function App() {
   return (
     <Router>  
       <div className="App">
         <Navbar />
+        <ScrollToTop/>
         <Route path="/" exact component={Home}/>
         <Route path="/about" component={About}/>
         <Route path="/services" component={Services}/>
