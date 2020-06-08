@@ -21,7 +21,7 @@ const About = () => {
         So do have a problem to solve?. Do you want to build a website or web-application that solves a problem?
         </p>
         <br/>  
-        <Link to="/contact"><p className='c2action subtitle'> Lets talk <i class="fa fa-chevron-right" aria-hidden="true"></i></p>.</Link>
+        <Link to="/contact"><p className='c2action subtitle'> Lets talk <i class="fa fa-chevron-right" aria-hidden="true"></i></p></Link>
       </div>      
     </section>
         </div>

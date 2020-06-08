@@ -47,7 +47,7 @@ class Form extends React.Component{
                 value={this.state.name} 
                 onChange={e => this.change(e)}/>
                 
-                
+                <p className="form-button">Submit</p>
 
             </form>
         )
