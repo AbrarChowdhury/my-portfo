@@ -24,6 +24,7 @@ input,textarea:focus{
     margin-top:5px;
     font-size: 18px;
     cursor: pointer;
+    background: rgba(50, 50, 50, 0);
 }
 .form-button:hover{
     background: rgba(50, 50, 50, 0.5);

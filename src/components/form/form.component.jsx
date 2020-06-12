@@ -1,12 +1,16 @@
 import React from 'react';
 import './form.style.css';
+import axios from 'axios'
 
 class Form extends React.Component{
-    state={
-        mName:"",
-        email: "",
-        message: ""
-    };
+    constructor(props){
+        super(props)
+        this.state ={
+            clientName:"",
+            email: "",
+            message: ""    
+        }
+    }
     change = e => {
         this.setState({
             [e.target.name]: e.target.value
@@ -14,14 +18,22 @@ class Form extends React.Component{
     };
     onSubmit = e => {
         e.preventDefault();
-        console.log(this.state);
+        const data = this.state
+        console.log(data);
+        axios.post('http://localhost:9000/send', data)
+            .then(response => {
+                console.log(response)
+            })
+            .catch(error => {
+                console.log(error)
+            })
     };
     render(){
         return (
-            <form autocomplete="off">
-                <label for='mName'>Name:</label><br/>
+            <form autocomplete="off" onSubmit = {this.onSubmit}>
+                <label for='clientName'>Name:</label><br/>
                 <input
-                name='mName'
+                name='clientName'
                 type='text'
                 placeholder="Your name" 
                 value={this.state.name} 
@@ -40,15 +52,15 @@ class Form extends React.Component{
                 <br/>
                 
                 <label for='message'>Message:</label><br/>
-                <textarea
+                <textarea 
                 name='message'
                 rows='5'
                 placeholder="Your message" 
                 value={this.state.name} 
                 onChange={e => this.change(e)}/>
-                
-                <p className="form-button">Submit</p>
+                <br/>
 
+                <button type='submit' className="form-button">Submit</button>
             </form>
         )
     }
