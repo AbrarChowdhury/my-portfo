@@ -20,7 +20,7 @@ class Form extends React.Component{
         e.preventDefault();
         const data = this.state
         console.log(data);
-        axios.post('http://localhost:9000/send', data)
+        axios.post('https://portfolio-contact-api.herokuapp.com//send', data)
             .then(response => {
                 console.log(response)
             })
