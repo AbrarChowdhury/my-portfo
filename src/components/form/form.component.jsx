@@ -22,10 +22,10 @@ class Form extends React.Component{
         console.log(data);
         axios.post('https://portfolio-contact-api.herokuapp.com/send', data)
             .then(response => {
-                console.log(response)
+                console.log('axios then',response)
             })
             .catch(error => {
-                console.log(error)
+                console.log('axios catch',error)
             })
     };
     render(){
