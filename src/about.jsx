@@ -14,11 +14,11 @@ const About = () => {
         <br/>
         
         
-        Why Jack of all trades? Because, before finally settling with web development I've worn many different hats. I have tried arts-crafts, graphic design, 2d animation, 3d modeling, wood-working, event management, robotics and product design. 
+        Why Jack of all trades? Because, before finally settling with web development I've worn many different hats. I have tried arts-crafts, graphic design, 2d animation, 3d modeling, carpentry, event management, robotics and product design. 
         And not just scratching the surface, I went pretty deep and made a name for myself in each of those fields.<br/><br/>
 
         
-        So do have a problem to solve?. Do you want to build a website or web-application that solves a problem?
+        So, do have a problem to solve? Do you want to build a website or web-application that solves a problem?
         </p>
         <br/>  
         <Link to="/contact"><p className='c2action subtitle'> Lets talk <i class="fa fa-chevron-right" aria-hidden="true"></i></p></Link>

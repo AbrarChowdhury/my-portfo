@@ -53,8 +53,8 @@ const Services = () => {
                     ))}
                     </div> 
                     <br/><br/><br/><br/><br/>
-                    <p className='name'><strong>Want my service?</strong></p>
-                    <Link to="/contact"><span className="c2action">Let me know the details <i class="fa fa-chevron-right" aria-hidden="true"></i></span></Link>
+                    <p className='name'><strong>Interest in getting my service?</strong></p>
+                    <Link to="/contact"><span className="c2action">Let me know! <i class="fa fa-chevron-right" aria-hidden="true"></i></span></Link>
                     <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
 
                 </div>
