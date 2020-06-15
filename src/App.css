@@ -46,6 +46,9 @@
 .fa-envelope{
     margin-left: 60px;
 }
+.fa-phone,.fa-envelope{
+  margin-right: 5px;
+}
 a{
   text-decoration: none;
 }
@@ -75,13 +78,15 @@ a{
   }
   
 
-  @media only screen and (max-width : 480px) {
+@media only screen and (max-width : 500px) {
 
     .menu-btn-burger, .menu-btn{
       display: block;
     } 
     .half-container{
       width: 90vw;
+      margin: 0, 90vw;
+      padding-top: 10%;
     }
     .header{
       font-size: 32px;
@@ -92,7 +97,22 @@ a{
     .name{
       font-size: 24px;
     }
+    .c2action{
+      font-size: 18px;
+    }
     .only-pc{
       display: none;
     }
+    .App{
+      background: rgb(29, 29, 29);
+    }
+    /*contact*/
+    .phone {
+      display: block;
+    }
+    .fa-phone,.fa-envelope{
+      margin-left:0px;
+      margin-right: 5px;
+    }
+
 	}

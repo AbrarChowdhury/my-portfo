@@ -102,4 +102,15 @@ input,textarea:focus{
       opacity: 1;
     }
   }
-  
+  @media only screen and (max-width : 500px){
+    input,textarea{
+      width: 80vw;
+      margin-right: 0em;
+      margin-left: 0em;
+    }
+    .form-button{
+      width: 85vw;
+      margin-right: 0em;
+      margin-left: 0em;
+    }
+  }
