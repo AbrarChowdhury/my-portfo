@@ -43,7 +43,7 @@ const Services = () => {
                    
                         </div>
                     
-                    <div className="service-list">
+                    <div className="service-l ist">
                     {services.map((service)=>(
                         <ServiceCard 
                             image={service.image} 

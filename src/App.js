@@ -1,5 +1,6 @@
 import React from 'react';
 import './App.css';
+import MobileNav from './components/mobileNav/mobileNav.component'
 import Navbar from './components/navbar/navbar.component'
 import Home from './home'
 import About from './about'
@@ -13,6 +14,7 @@ function App() {
     <Router>  
       <div className="App">
         <Navbar />
+        <MobileNav />
         <ScrollToTop/>
         <Route path="/" exact component={Home}/>
         <Route path="/about" component={About}/>

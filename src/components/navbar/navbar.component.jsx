@@ -3,7 +3,7 @@ import './navbar.style.css';
 import { NavLink } from 'react-router-dom'
 function Navbar() {
     return (
-        <nav>
+        <nav className="only-pc">
             <div>
                 <NavLink exact className="main-nav" activeClassName="main-nav-active" to="/">
                     Home
