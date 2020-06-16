@@ -68,15 +68,6 @@ a{
   .half-container, .projects{
     animation: fade-in-up .5s ease-in;
   }
-  /* .projects{
-    animation: fade-in-up 0.6s ease-in;
-  } */
-
-  /*mobile-only*/
-  .menu-btn-burger, .menu-btn, .mobile-only{
-    display: none;
-  }
-  
 
 @media only screen and (max-width : 500px) {
 
@@ -103,8 +94,12 @@ a{
     .only-pc{
       display: none;
     }
+
     .App{
       background: rgb(29, 29, 29);
+    }
+    .home,.contact,.work,.services{
+
     }
     /*contact*/
     .phone {
