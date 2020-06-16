@@ -13,6 +13,7 @@ nav{
   border-bottom: 1px solid;
   border-image: linear-gradient(to bottom right, rgba(255,255, 255, .2), rgba(255,255, 255,0.05));
   border-image-slice: 1;
+  z-index: 50;
 }
 .main-nav{
   display: inline;
@@ -29,3 +30,25 @@ nav{
 .main-nav-active:hover{
   color: rgba(255, 166, 0, 0.9);
 }
+@media only screen and (min-width : 500px){
+  .nav-icon{
+    display: none;
+  }
+}
+@media only screen and (max-width : 500px){
+  .navbar-links{
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(5, 1fr);
+    justify-content: center;
+    justify-items: center;
+    justify-self: center;
+  }
+  .main-nav{
+    font-size: 16px;
+    margin-left: 0;
+  }
+  .nav-title{
+    display: none;
+  }
+} 

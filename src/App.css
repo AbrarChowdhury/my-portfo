@@ -72,15 +72,15 @@ a{
     animation: fade-in-up 0.6s ease-in;
   } */
 
-
-  .menu-btn-burger, .menu-btn{
+  /*mobile-only*/
+  .menu-btn-burger, .menu-btn, .mobile-only{
     display: none;
   }
   
 
 @media only screen and (max-width : 500px) {
 
-    .menu-btn-burger, .menu-btn{
+    .menu-btn-burger, .menu-btn, .mobile-only {
       display: block;
     } 
     .half-container{
