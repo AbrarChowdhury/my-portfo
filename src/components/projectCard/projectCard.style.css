@@ -14,3 +14,23 @@
     height: 200px;
     margin: 60px;
 }
+@media only screen and (max-width : 500px){
+    .project-container{
+        grid-template-columns: 1fr;
+        grid-template-rows:auto auto;
+        grid-template-areas: 
+        "img"
+        "text";
+    }
+    .project-img{
+        width: 70vw;
+        margin: 50px auto 0 auto;
+        grid-area: img;   
+    }
+    .project-text{
+        grid-area: text;
+        margin-top: 0;
+        padding-top: 0;
+    }
+
+}

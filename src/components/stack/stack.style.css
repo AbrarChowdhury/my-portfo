@@ -1,0 +1,11 @@
+.stack-container{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    max-width: 700px;
+}
+.line{
+    display: inline-block;
+    height:100%;
+    width: 2px;
+    background: white;
+}

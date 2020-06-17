@@ -6,7 +6,7 @@ function ProjectCard(props){
         <div>
             <div className="project-container">
                 <div className="project-text">
-                    <h1>{props.title}</h1>
+                    <h1 className =" project-caption-title">{props.title}</h1>
                     <p>{props.desc}</p>
                     <p><a className="c2action" href={props.link}>View Live</a></p>
                 </div>
