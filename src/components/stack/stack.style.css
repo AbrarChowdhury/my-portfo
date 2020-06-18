@@ -1,11 +1,18 @@
 .stack-container{
     display: grid;
-    grid-template-columns: auto auto auto auto auto;
-    max-width: 700px;
+    grid-template-columns: 30% auto 33% auto 32%;
+    max-width: 100%;
+    
 }
 .line{
     display: inline-block;
     height:100%;
     width: 2px;
-    background: white;
+    background: rgba(255, 255, 255, 0.2);
+}
+
+@media only screen and (max-width : 600px){
+    .stack-container{
+        display: none;
+    }
 }

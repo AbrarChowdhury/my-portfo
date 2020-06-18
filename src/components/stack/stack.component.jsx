@@ -1,5 +1,6 @@
 import React, { Component, PropTypes } from 'react';
 import './stack.style.css'
+import ChangeText from '../changeText/changeText';
 class componentName extends Component {
     constructor(props) {
         super(props);
@@ -8,43 +9,16 @@ class componentName extends Component {
         }
     }
 
-    componentWillMount() {
-    
-    }
-
-    componentDidMount() {
-
-    }
-
-    componentWillReceiveProps(nextProps) {
-
-    }
-
-    shouldComponentUpdate(nextProps, nextState) {
-
-    }
-
-    componentWillUpdate(nextProps, nextState) {
-
-    }
-
-    componentDidUpdate(prevProps, prevState) {
-
-    }
-
-    componentWillUnmount() {
-
-    }
-
     render() {
         return (
             <div className="stack-container subtitle">
-                <p className="stack">UI/UX - Xd</p>
+                <p className="stack">Front-End: <ChangeText time={2000} array = {["HTML5","CSS3","JavaScript","React","JQuery","Bootstap","Material-UI","Materialize"]} /></p>                
                 <div className = "line"/>
-                <p className="stack">Front-End - HTML5</p>
+                <p className="stack">Back-End: <ChangeText time={2200} array = {["Node.js","Express","MongoDb","MySQL",]} /></p>
                 <div className = "line"/>
-                <p className="stack">Back-End - Node.js</p>
-            </div>
+                <p className="stack">UI/UX: <ChangeText time={2500} array = {["Xd","Illustrator","Photoshop"]} /></p>
+                <br/><br/>
+                </div>
         );
     }
 }

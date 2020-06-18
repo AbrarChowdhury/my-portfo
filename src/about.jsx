@@ -8,7 +8,7 @@ const About = () => {
       <section className="about">
       <div className="half-container">
         <h1 className="header">I Build Products With Passion.</h1>
-        <p className="subtitle">I'm Abrar Shams Chowdhury.<br/><br/>
+        <p className="subtitle">
         An engineer by heart, I love to invent, design, analyze, build, and test.<br/>
         My goal is to create unique solutions that surprise and delight users.<br/>
         <br/>

@@ -1,6 +1,7 @@
 import React from 'react';
 import Stack from './components/stack/stack.component'
 import { Link } from 'react-router-dom'
+import ChangeText from './components/changeText/changeText'
 const services = [
     {
         image:'/images/resIcon.png',
@@ -25,7 +26,7 @@ const services = [
     {
         image:'/images/resIcon.png',
         title:"Secure",
-        desc:"Have some confidential data to store?. no problem, I will salt and hash your data before storing them."
+        desc:"Some datas are better kept as sectret, I ensure full data security"
     }
 
 ]
@@ -36,12 +37,18 @@ const Services = () => {
         <div>
             <section className="services">
                 <div className="half-container">
-                    <div>
+                
                         <Stack />
-                        <h1 className='header'>My Websites Are {services[number].title}.</h1>
-                        <h2 className='name'>{services[number].desc}</h2>                   
-                        </div>
-                    
+                        
+                        <h1 className='header'>My Websites Are <ChangeText time={6000} array={[services[0].title,services[1].title,services[2].title,services[3].title,services[4].title]}/>.</h1>
+                        <h2 className='subtitle'><ChangeText time={6000} array = {[services[0].desc,services[1].desc,services[2].desc,services[3].desc,services[4].desc]} /></h2>                   
+                
+                        <br/><br/>
+                        <p className="name">Interested already? <br/>
+                        want me work on your
+                        <Link to="/contact"><strong className="big-c2action"> <ChangeText time={2500} array = {["Landing-Page","E-commmerese site","Personal Portolio"]} /></strong>
+                        </Link> ?
+                        </p>
                   </div>
             </section>
         </div>
