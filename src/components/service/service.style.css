@@ -1,0 +1,25 @@
+.service-container{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 40px;
+}
+.service{
+    padding-bottom: 20px;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.21);
+    display:grid;
+    grid-template-columns: auto auto;
+    align-content: center;
+    align-items:center;
+    grid-column-gap: 10px;
+}
+.service-title{
+    margin: 0;
+    margin-bottom: 5px;
+    padding: 0;
+}
+.service-desc{
+    margin: 0;
+}
+.service-icon{
+    height: 120px;
+}
