@@ -2,6 +2,7 @@
     display: grid;
     grid-template-columns: 30% auto 33% auto 32%;
     max-width: 100%;
+    animation: fade-fade 5s ease-in-out;
     
 }
 .line{
@@ -16,3 +17,15 @@
         display: none;
     }
 }
+
+
+@keyframes fade-fade {
+    0% {
+      opacity:0;
+      transform: translate(200px, 15px);
+    }
+    100% {
+      opacity:100;
+      transform: translate(0, 0);
+    }
+  }
