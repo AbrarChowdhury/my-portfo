@@ -11,6 +11,7 @@
     align-content: center;
     align-items:center;
     grid-column-gap: 10px;
+    animation: fade-fade 1s ease-in-out;
 }
 .service-title{
     margin: 0;
@@ -23,3 +24,32 @@
 .service-icon{
     height: 120px;
 }
+
+@media only screen and (max-width : 600px){
+    .stack-container{
+        display: none;
+    }
+}
+
+
+@keyframes fade-fade {
+    0% {
+      opacity:0;
+      transform: translate(50px, 30px);
+    }
+    50% {
+        opacity: 0;
+    }
+    90%{
+        opacity:100;
+        transform: translate(0, 0); 
+    }
+    95%{
+        opacity:0;
+        transform: translate(-10px, 0); 
+    }
+    100% {
+      opacity:100;
+      transform: translate(0, 0);
+    }
+  }
