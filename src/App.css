@@ -1,14 +1,15 @@
 
 .App{
-    background: url(/images/abrar.png) no-repeat fixed;
+    /* background: url(/images/abrar.png) no-repeat fixed;
     background-size: cover;
-    background-position: center;
+    background-position: center; */
     min-height: 100vh;
 }
 .half-container{
     margin: 0 5vw;
     width: 50vw;
     padding-top: 15vh;
+    min-width: 600px;
 }
 .height{
     min-height: 48vh;
@@ -35,12 +36,29 @@
     color: orange;
     text-decoration: none;
 }
-.big-c2action{
-    color: orange;
-}
+
 .name{
     font-size: 32px;
     font-weight: 400;
+}
+
+.picture-card{
+  display: grid;
+  grid-template-columns: .5fr 1fr;
+  align-items: center;
+  grid-gap: 20px;
+  margin: 20px 0;
+}
+.profile-img{
+  width: 100%;
+  border-radius: 50%;
+  border: 2px solid white;
+  background-color: rgba(255, 166, 0, 0.144);
+}
+.p-c-text{
+  border-top: 2px solid white;
+  border-bottom: 2px solid white;
+  padding: 20px;
 }
 .service-list{
     margin-top: 15vh;
@@ -72,7 +90,7 @@ a{
     animation: fade-in-up .5s ease-in;
   }
 
-@media only screen and (max-width : 500px) {
+@media only screen and (max-width : 600px) {
 
     .menu-btn-burger, .menu-btn, .mobile-only {
       display: block;
@@ -81,6 +99,7 @@ a{
       width: 90vw;
       margin: 0, 90vw;
       padding-top: 10%;
+      min-width: 0;
     }
     .header{
       font-size: 32px;
@@ -94,16 +113,15 @@ a{
     .c2action{
       font-size: 18px;
     }
+    .picture-card{
+      grid-template-columns: 1fr;
+    }
     .only-pc{
       display: none;
     }
 
-    .App{
-      background: rgb(29, 29, 29);
-    }
-    .home,.contact,.work,.services{
 
-    }
+
     /*contact*/
     .phone {
       display: block;

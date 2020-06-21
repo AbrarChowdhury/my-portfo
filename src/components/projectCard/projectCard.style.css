@@ -12,10 +12,10 @@
 }
 .project-img{
     justify-self: end;
-    height: 200px;
+    width: 100%;
     margin: 60px 0;
 }
-@media only screen and (max-width : 500px){
+@media only screen and (max-width : 600px){
     .project-container{
         grid-template-columns: 1fr;
         grid-template-rows:auto auto;

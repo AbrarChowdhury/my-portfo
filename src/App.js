@@ -12,6 +12,7 @@ function App() {
   return (
     <Router>  
       <div className="App">
+        
         <Navbar />
         <ScrollToTop/>
         <Route path="/" exact component={Home}/>
