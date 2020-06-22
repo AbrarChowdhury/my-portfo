@@ -1,7 +1,8 @@
 import React from 'react';
 import './form.style.css';
 import axios from 'axios'
-
+import '../../../node_modules/aos/dist/aos.css';
+import AOS from 'aos'; 
 class Form extends React.Component{
     constructor(props){
         super(props)
@@ -11,6 +12,7 @@ class Form extends React.Component{
             message: "",
             isSent: false
         }
+        AOS.init(); 
     }
     change = e => {
         this.setState({
@@ -28,14 +30,7 @@ class Form extends React.Component{
     modal = (text) => {
         alert(text)
     }
-    // onKeyDown = (event: React.KeyboardEvent<HTMLDivElement>): void => {
-    //     // 'keypress' event misbehaves on mobile so we track 'Enter' key via 'keydown' event
-    //     if (event.key === 'Enter') {
-    //       event.preventDefault();
-    //       event.stopPropagation();
-    //       this.onSubmit();
-    //     }
-    //   }
+
     onSubmit = e => {
         e.preventDefault();
         console.log(this.state)
@@ -53,7 +48,7 @@ class Form extends React.Component{
     render(){
 
         return (
-            <div>
+            <div className="aos-item"  data-aos-mirror="true" data-aos="zoom-in-left" data-aos-duration="1000">
             {this.state.isSent? <h1 className="flicker-1" >Got your message, will get back to you ASAP.</h1>:<h1 className="hide"></h1>}
             <form autocomplete="off" onSubmit = {this.onSubmit}>
                 <label for='clientName'>Name:</label><br/>

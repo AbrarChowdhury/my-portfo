@@ -1,14 +1,23 @@
 import React from 'react';
 import { Link } from 'react-router-dom'
-
-const About = () => {
+import '../node_modules/aos/dist/aos.css'; 
+import AOS from 'aos'; 
+class About extends React.Component { 
+  constructor(props, context) { 
+    super(props, context); 
+    AOS.init(); 
+  } 
+  componentWillReceiveProps (){ 
+    AOS.refresh(); 
+  } 
+  render(){ 
     return (
-        <div>
+      <div>
             
       <section className="about">
       <div className="half-container">
         <h1 className="header">I Build Products With Passion.</h1>
-        <div className = "picture-card">
+        <div className = "picture-card aos-item"  data-aos-mirror="true" data-aos="zoom-in-left" data-aos-duration="500">
         <img  className="profile-img" src="/images/ads.png"></img>
           <p className="subtitle  p-c-text">
           An engineer by heart, I love to invent, design, analyze, build, and test.<br/><br/>
@@ -29,6 +38,10 @@ const About = () => {
     </section>
         </div>
     );
-};
+  } 
+}
+
+
+
 
 export default About;

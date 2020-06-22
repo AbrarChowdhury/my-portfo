@@ -1,7 +1,8 @@
 import React from 'react';
-import './service.style.css'
+import './service.style.css';
+import '../../../node_modules/aos/dist/aos.css';
+import AOS from 'aos'; 
 import Service from './service.component';
-
 
 const services = [
     {
@@ -32,14 +33,28 @@ const services = [
 
 ]
 
-const ServiceContainer = () => {
+
+class ServiceContainer extends React.Component { 
+  constructor(props, context) { 
+    super(props, context); 
+    AOS.init(); 
+  } 
+  componentWillReceiveProps (){ 
+    AOS.refresh(); 
+  } 
+  render(){ 
     return (
-        <div className ="service-container">
+        <div className ="service-container" >
             {services.map((service)=>(
-            <Service title={service.title} desc={service.desc} icon={service.image}/>
+            <div className="aos-item"  data-aos-mirror="true" data-aos="zoom-in-left" data-aos-duration="1000">
+                <Service title={service.title} desc={service.desc} icon={service.image}/>
+            </div>
            ))}
         </div>
     );
-};
+  } 
+}
+
+
 
 export default ServiceContainer;
