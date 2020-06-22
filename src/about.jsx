@@ -9,7 +9,7 @@ const About = () => {
       <div className="half-container">
         <h1 className="header">I Build Products With Passion.</h1>
         <div className = "picture-card">
-        <img  className="profile-img" src="/images/abrar-small.png"></img>
+        <img  className="profile-img" src="/images/ads.png"></img>
           <p className="subtitle  p-c-text">
           An engineer by heart, I love to invent, design, analyze, build, and test.<br/><br/>
           My goal is to create unique solutions that surprise and delight users.
