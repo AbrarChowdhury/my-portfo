@@ -12,7 +12,6 @@ function App() {
   return (
     <Router>  
       <div className="App">
-        
         <Navbar />
         <ScrollToTop/>
         <Route path="/" exact component={Home}/>
@@ -22,6 +21,10 @@ function App() {
         <Route path="/contact" component={Contact}/>
       </div>
     </Router>
+
+    
+    
+    
   );
 }
 

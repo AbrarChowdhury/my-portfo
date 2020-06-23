@@ -28,7 +28,7 @@ const services = [
     {
         image:'/icons/secure-8.png',
         title:"Secure.",
-        desc:"Some datas are better kept as sectret, I ensure complete data security."
+        desc:"Some data are better kept sectret, I ensure complete data security."
     }
 
 ]

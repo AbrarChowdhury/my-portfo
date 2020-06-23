@@ -10,7 +10,7 @@
   .obj{
     width: 6px;
     height: 40px;
-    background: white;
+    background:white;
     margin: 0 3px;
     border-radius: 3px;
     animation: loading 0.8s infinite;
@@ -49,3 +49,14 @@
     }
   }
 
+
+  #particles-js {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background: #141E30;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #131313, #575151);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #131313, #575151); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  
+  }

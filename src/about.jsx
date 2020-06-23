@@ -18,7 +18,7 @@ class About extends React.Component {
       <div className="half-container">
         <h1 className="header">I Build Products With Passion.</h1>
         <div className = "picture-card aos-item"  data-aos-mirror="true" data-aos="zoom-in-left" data-aos-duration="500">
-        <img  className="profile-img" src="/images/ads.png"></img>
+        <img  className="profile-img" src="/images/abrar-ps.jpg"></img>
           <p className="subtitle  p-c-text">
           An engineer by heart, I love to invent, design, analyze, build, and test.<br/><br/>
           My goal is to create unique solutions that surprise and delight users.
@@ -30,7 +30,7 @@ class About extends React.Component {
         And not just scratching the surface, I went pretty deep and made a name for myself in each of those fields.<br/><br/>
 
         
-        So, do have a problem to solve? Do you want to build a website or web-application that solves a problem?
+        Have a problem to solve? Want to build a website or web-application that solves a problem?
         </p>
         <br/>  
         <Link to="/contact"><p className='c2action subtitle'> Lets talk <i class="fa fa-chevron-right" aria-hidden="true"></i></p></Link>

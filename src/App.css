@@ -1,8 +1,5 @@
 
 .App{
-    /* background: url(/images/abrar.png) no-repeat fixed;
-    background-size: cover;
-    background-position: center; */
     min-height: 100vh;
 }
 .half-container{
@@ -10,6 +7,7 @@
     width: 50vw;
     padding-top: 15vh;
     min-width: 600px;
+    z-index: 1;
 }
 .height{
     min-height: 48vh;
@@ -112,6 +110,11 @@ a{
     }
     .c2action{
       font-size: 18px;
+    }
+    .home{
+      display: grid;
+      align-content: center;
+      height: 80vh;
     }
     .picture-card{
       grid-template-columns: 1fr;
