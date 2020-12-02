@@ -1,0 +1,52 @@
+.nav{
+
+    position: fixed;
+    width: 100%;
+    
+    z-index: 1000;
+
+    .subNav{
+        background: rgba(47, 47, 47, 0.99);
+        margin: 0 auto;
+        width: 50vw;
+        min-width: 600px;
+        padding: 10px 5vw;
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        justify-items: center;
+        box-shadow: 0px 1px 10px rgb(3, 3, 3);
+        font-size: large;
+    }
+    .main-nav{
+        display: inline;
+        margin: 0;
+        text-decoration: none;
+        color: white;
+      }
+      .main-nav:hover{
+        color: rgba(255, 255, 255, 0.9);
+      }
+      .main-nav-active{
+        color: orange;
+      }
+      .main-nav-active:hover{
+        color: rgba(255, 166, 0, 0.9);
+      }
+      @media only screen and (min-width : 600px){
+
+        .nav-icon{
+          display: none;
+        }
+      }
+      @media only screen and (max-width : 600px){
+        .subNav{
+            min-width: 0;
+            width: 100%;
+            padding: 10px 0;
+        }
+        .nav-title{
+          display: none;
+          
+        }
+      } 
+}

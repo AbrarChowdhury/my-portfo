@@ -8,9 +8,6 @@ function Navbar() {
                 <NavLink exact className="main-nav" activeClassName="main-nav-active" to="/">
                     <span className= "nav-icon"><i className="fa fa-home"></i></span><span className="nav-title">Home</span>
                 </NavLink>
-                <NavLink exact className="main-nav" activeClassName="main-nav-active" to="/about">
-                    About
-                </NavLink>
                 <NavLink exact className="main-nav" activeClassName="main-nav-active" to="/services">
                     Service
                 </NavLink>

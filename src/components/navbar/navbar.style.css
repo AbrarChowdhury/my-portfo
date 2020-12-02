@@ -5,10 +5,7 @@ nav{
   background: -webkit-linear-gradient(to right, #131313d8, #575151);  /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to right, #131313d8, #575151); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   height: 60px;
-  width: 100vw;
   position: fixed;
-  top: 0;
-  left:0;
   font-weight: bold;
   font-size: 18px;
   border: 0px;
@@ -17,45 +14,13 @@ nav{
   border-image-slice: 1;
   z-index: 50;
 }
-.main-nav{
-  display: inline;
-  margin-left: 7.5vw;
-  text-decoration: none;
-  color: white;
+.navbar-links{
+  width: 50vw;
+  display: grid;
+  grid-gap: 5vw;
+  grid-template-columns: repeat(5, 1fr);
+  align-content: center;
+  justify-content: center;
+  justify-items: center;
+  justify-self: center;
 }
-.main-nav:hover{
-  color: rgba(255, 255, 255, 0.9);
-}
-.main-nav-active{
-  color: orange;
-}
-.main-nav-active:hover{
-  color: rgba(255, 166, 0, 0.9);
-}
-@media only screen and (min-width : 600px){
-  .nav-icon{
-    display: none;
-  }
-}
-@media only screen and (max-width : 600px){
-  nav{
-    height: 40px;
-  }
-  .navbar-links{
-    
-    display: grid;
-    grid-gap: 10px;
-    grid-template-columns: repeat(5, 1fr);
-    align-content: center;
-    justify-content: center;
-    justify-items: center;
-    justify-self: center;
-  }
-  .main-nav{
-    font-size: 16px;
-    margin-left: 0;
-  }
-  .nav-title{
-    display: none;
-  }
-} 

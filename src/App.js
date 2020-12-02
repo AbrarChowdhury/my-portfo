@@ -1,6 +1,7 @@
 import React from 'react';
 import './App.css';
 import Navbar from './components/navbar/navbar.component'
+import Nav from './components/nav/nav.component'
 import Home from './home'
 import About from './about'
 import Services from './services'
@@ -12,7 +13,7 @@ function App() {
   return (
     <Router>  
       <div className="App">
-        <Navbar />
+        <Nav/>
         <ScrollToTop/>
         <Route path="/" exact component={Home}/>
         <Route path="/about" component={About}/>
