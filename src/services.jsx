@@ -18,7 +18,7 @@ const Services = () => {
                     <p className="name">My Website Are</p>
                     <ServiceContainer />
                     <br/>
-                     <Link to="/about">
+                     <Link to="/work">
                         <p><span className="c2action">view my recent work <i class="fa fa-chevron-right" aria-hidden="true"></i></span></p>
                     </Link>
                   </div>
