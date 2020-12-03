@@ -10,8 +10,10 @@ function ProjectCard(props){
                     <p>{props.desc}</p>
                     <p><a className="c2action" href={props.link}>View Live</a></p>
                 </div>
+                <div className="imageCard">
                 <img className="project-img" src={props.image}></img>
-            </div>        
+                </div>
+                </div>        
         </div>
         
     )
